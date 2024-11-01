@@ -301,7 +301,7 @@ public class NetworkManager : MonoBehaviour
         // 서버로 클라 시간 전달
         Ping C2S_PongPacket = new Ping()
         {
-            timestamp = now
+            timestamp = serverTimestamp
         };        
 
         var payloadWriter = new ArrayBufferWriter<byte>();
